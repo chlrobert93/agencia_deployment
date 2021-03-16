@@ -1,0 +1,34 @@
+extends ./layout/index  
+
+//-Lo que colo que en el slider se muestra en index.pug o aqui mismo
+block slider
+     .slider
+        h1 Rio de Janeiro
+        em aventura
+
+block contenido 
+     main.container.mt-5
+          h2.text-center.mb-5 Sobre Nosotros
+          .row.mb-5 
+              .col-md-6
+                 p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed placerat sem vitae dolor finibus, in venenatis mauris tempor. Praesent in tristique urna. Pellentesque id sagittis justo. Sed interdum et leo vitae efficitur. Cras viverra ligula sit amet vestibulum iaculis. Donec vitae dui neque. Praesent velit metus, varius vitae erat eget, aliquam congue lectus. Nunc in dictum lorem, eget suscipit magna. Morbi placerat diam ex, id aliquam urna ullamcorper ut. Mauris justo leo, mattis nec elit vitae, luctus lacinia nulla.
+                 p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi aliquet dui nulla, ac ultricies felis fringilla et. Proin in bibendum nunc. In ut ligula.
+
+              .col-md-6 
+               //-img-fluid response para las img en boostrap
+
+               img(src="/img/inicio_nosotros.jpg", alt="imagen nosotros", class="img-fluid")
+          include ./layout/bloques_viajes
+  
+     .descuento
+        .container
+            .row
+              .col-md-6
+                   .container 
+                       h3 5% de Descuento
+                       p.titulo viaje a Canda
+                       p.fecha 20 de Marzo de 2022- 28 de Marzo de 2022
+                       p.precio $2,500 USD   
+     .container
+         h2.mt-5.text-center Testimoniales                   
+         include ./layout/bloque_testimoniales         
